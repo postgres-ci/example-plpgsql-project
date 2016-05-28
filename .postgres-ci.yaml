@@ -1,0 +1,14 @@
+images:
+  - postgres:9.2
+  - postgres:9.3
+  - postgres:9.4
+  - postgres:9.5
+  - postgres:9.6
+
+commands:
+  - bash test_setup.sh
+
+postgres:
+  database: test
+  username: tester
+  password: qwerty
