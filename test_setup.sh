@@ -6,5 +6,6 @@ env PGPASSWORD=$TEST_PASSWORD psql -v ON_ERROR_STOP=1 -q -U $TEST_USERNAME -d $T
 
 env PGPASSWORD=$TEST_PASSWORD psql -v ON_ERROR_STOP=1 -q -U $TEST_USERNAME -d $TEST_DATABASE <<-SQL
 	SELECT assert.add_test('example', 'test_sum');
+	SELECT assert.add_test('example', 'test_sum_with_errors');
 SQL
 
